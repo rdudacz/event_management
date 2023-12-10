@@ -1,0 +1,10 @@
+<tr id="<%= dom_id event %>">
+  <th scope="row"><%= event.id %></th>
+  <td><%= event.name %></td>
+  <td><%= event.date.strftime('%b %d, %Y @ %l:%M:%S%P') %></td>
+  <td><%= event.location %></td>
+  <td><%= event.user.email %></td>
+  <td>
+    <%= link_to "Display", event %>
+  </td>
+</tr>

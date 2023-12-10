@@ -1,0 +1,5 @@
+<p>Welcome to Event Management site.</p>
+
+<% if @latest_events %>
+  <%= render template: "/events/latest_events", locals: { events: @latest_events } %>
+<% end %>
